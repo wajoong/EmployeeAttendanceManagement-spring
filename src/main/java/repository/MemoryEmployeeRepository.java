@@ -23,9 +23,7 @@ public class MemoryEmployeeRepository implements EmployeeRepository{
 
     @Override
     public Optional<Employee> findByNumber(int staffNumber) {
-        employeeList.values().stream()
-                .filter(employee -> employee.getStaffNumber() == staffNumber)
-                .findAny();
+        return Optional.ofNullable(employeeList.get(staffNumber));
     }
 
 
