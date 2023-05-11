@@ -7,7 +7,7 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(int staffNumber, String name) {
+    public Employee(int staffNumber, String name) {1
         this.staffNumber = staffNumber;
         this.name = name;
     }
