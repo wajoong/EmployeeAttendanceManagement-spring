@@ -1,12 +1,8 @@
 package EmployeeAttendanceManagement.EmployeeAttendanceManagementspring.repository;
 
-import domain.Employee;
-import jdk.jfr.TransitionFrom;
-import org.assertj.core.api.Assertions;
+import model.Employee;
 import org.junit.jupiter.api.Test;
 import repository.MemoryEmployeeRepository;
-
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 

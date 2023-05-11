@@ -1,6 +1,6 @@
 package repository;
 
-import domain.Employee;
+import model.Employee;
 
 import java.util.*;
 
