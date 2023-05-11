@@ -1,7 +1,6 @@
 package domain;
 
 public class Employee {
-    private long id;
     private int staffNumber;
     private String name;
 
@@ -11,14 +10,6 @@ public class Employee {
     public Employee(int staffNumber, String name) {
         this.staffNumber = staffNumber;
         this.name = name;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public int getStaffNumber() {

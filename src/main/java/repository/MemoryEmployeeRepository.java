@@ -6,13 +6,12 @@ import java.util.*;
 
 public class MemoryEmployeeRepository implements EmployeeRepository{
 
-    private static final Map<Long,Employee> employeeList = new HashMap<>();
+    private static final Map<Integer,Employee> employeeList = new HashMap<>();
 
 
     @Override
     public Employee save(Employee employee) {
-        employee.setId(employee.getStaffNumber());
-        employeeList.put(employee.getId(),employee);
+        employeeList.put(employee.getStaffNumber(),employee);
         return employee;
     }
 
