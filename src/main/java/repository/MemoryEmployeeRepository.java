@@ -23,17 +23,14 @@ public class MemoryEmployeeRepository implements EmployeeRepository{
 
     @Override
     public Optional<Employee> findByNumber(int staffNumber) {
-        Employee employee = null;
-        for(Employee e : employeeList){
-            if(e.getStaffNumber() == staffNumber){
-                employee = e;
-            }
-        }
-        return Optional.ofNullable(employee);
+        employeeList.values().stream()
+                .filter(employee -> employee.getStaffNumber() == staffNumber)
+                .findAny();
     }
+
 
     @Override
     public List<Employee> findAll() {
-        return employeeList;
+        return new ArrayList<>(employeeList.values());
     }
 }
