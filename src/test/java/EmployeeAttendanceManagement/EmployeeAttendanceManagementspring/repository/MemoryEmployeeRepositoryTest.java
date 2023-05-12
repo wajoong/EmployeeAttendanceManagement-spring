@@ -15,25 +15,25 @@ class MemoryEmployeeRepositoryTest {
     @Test
     public void save(){
         Employee employee = new Employee();
-        employee.setStaffNumber(2019);
+        employee.setEmployeeNumber(2019);
         employee.setName("주원");
 
         repository.save(employee);
 
-        Employee employee1 = repository.findByNumber(employee.getStaffNumber()).get();
+        Employee employee1 = repository.findByNumber(employee.getEmployeeNumber()).get();
         assertThat(employee1).isEqualTo(employee);
     }
 
     @Test
     public void remove(){
         Employee employee = new Employee();
-        employee.setStaffNumber(2019);
+        employee.setEmployeeNumber(2019);
         employee.setName("주원");
 
         repository.save(employee);
 
         Employee employee1 = new Employee();
-        employee1.setStaffNumber(2020);
+        employee1.setEmployeeNumber(2020);
         employee1.setName("현우");
 
         repository.save(employee1);

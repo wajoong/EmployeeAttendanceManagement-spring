@@ -1,23 +1,23 @@
 package model;
 
 public class Employee {
-    private int staffNumber;
+    private int employeeNumber;
     private String name;
 
     public Employee() {
     }
 
-    public Employee(int staffNumber, String name) {
-        this.staffNumber = staffNumber;
+    public Employee(int employeeNumber, String name) {
+        this.employeeNumber = employeeNumber;
         this.name = name;
     }
 
-    public int getStaffNumber() {
-        return staffNumber;
+    public int getEmployeeNumber() {
+        return employeeNumber;
     }
 
-    public void setStaffNumber(int staffNumber) {
-        this.staffNumber = staffNumber;
+    public void setEmployeeNumber(int employeeNumber) {
+        this.employeeNumber = employeeNumber;
     }
 
     public String getName() {

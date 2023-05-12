@@ -11,13 +11,13 @@ public class MemoryEmployeeRepository implements EmployeeRepository{
 
     @Override
     public Employee save(Employee employee) {
-        employeeList.put(employee.getStaffNumber(),employee);
+        employeeList.put(employee.getEmployeeNumber(),employee);
         return employee;
     }
 
     @Override
     public Employee remove(Employee employee) {
-        employeeList.remove(employee.getStaffNumber());
+        employeeList.remove(employee.getEmployeeNumber());
         return employee;
     }
 
