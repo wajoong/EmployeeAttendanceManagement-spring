@@ -17,7 +17,8 @@ public class MemoryEmployeeRepository implements EmployeeRepository{
 
     @Override
     public Employee remove(Employee employee) {
-        return null;
+        employeeList.remove(employee.getStaffNumber());
+        return employee;
     }
 
     @Override
